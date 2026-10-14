@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "bundleIdentifier": "ch.inmood.ConnectSupport.ScreenshotSample",
+  "projectPath": "/absolute/path/to/connect-support-sample/Screenshot Sample.xcodeproj",
+  "scheme": "Screenshot Sample iOS",
+  "configuration": "Debug",
+  "languages": [
+    {
+      "id": "en-US",
+      "language": "en",
+      "locale": "en_US"
+    },
+    {
+      "id": "de-DE",
+      "language": "de",
+      "locale": "de_DE"
+    }
+  ],
+  "devices": [
+    {
+      "id": "REPLACE-WITH-SIMULATOR-UUID",
+      "folder": "iPhone",
+      "deviceType": "iPhone"
+    }
+  ],
+  "screens": [
+    {
+      "name": "main",
+      "arguments": [
+        "-screenshotScreen",
+        "main"
+      ],
+      "waitSeconds": 8
+    },
+    {
+      "name": "device-detail",
+      "arguments": [
+        "-screenshotScreen",
+        "device-detail"
+      ],
+      "waitSeconds": 8
+    },
+    {
+      "name": "device-specifications",
+      "arguments": [
+        "-screenshotScreen",
+        "device-specifications"
+      ],
+      "waitSeconds": 8
+    },
+    {
+      "name": "create-incident",
+      "arguments": [
+        "-screenshotScreen",
+        "create-incident"
+      ],
+      "waitSeconds": 8
+    },
+    {
+      "name": "main-overlay",
+      "arguments": [
+        "-screenshotScreen",
+        "main-overlay"
+      ],
+      "waitSeconds": 8
+    },
+    {
+      "name": "apps",
+      "arguments": [
+        "-screenshotScreen",
+        "apps"
+      ],
+      "waitSeconds": 8
+    },
+    {
+      "name": "incident-popover",
+      "arguments": [
+        "-screenshotScreen",
+        "incident-popover"
+      ],
+      "waitSeconds": 8
+    }
+  ],
+  "overwriteExisting": false,
+  "outputDirectory": "/absolute/path/to/screenshots",
+  "logDirectory": "/absolute/path/to/logs"
+}
