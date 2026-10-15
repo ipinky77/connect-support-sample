@@ -1,28 +1,279 @@
 // !$*UTF8*$!
-{ archiveVersion = 1; classes = {}; objectVersion = 71; objects = {
-000000000000000000000001 = { isa = PBXProject; attributes = { LastUpgradeCheck = 2600; }; buildConfigurationList = 000000000000000000000028; compatibilityVersion = "Xcode 16.0"; developmentRegion = en; knownRegions = (en, de, Base); mainGroup = 000000000000000000000002; productRefGroup = 000000000000000000000003; projectDirPath = ""; projectRoot = ""; targets = (00000000000000000000000A, 000000000000000000000014); };
-000000000000000000000002 = { isa = PBXGroup; children = (000000000000000000000004, 000000000000000000000005, 000000000000000000000006, 000000000000000000000003); sourceTree = "<group>"; };
-000000000000000000000003 = { isa = PBXGroup; children = (00000000000000000000000B, 000000000000000000000015); name = Products; sourceTree = "<group>"; };
-000000000000000000000004 = { isa = PBXFileSystemSynchronizedRootGroup; path = Core; sourceTree = "<group>"; explicitFileTypes = {}; explicitFolders = (); };
-000000000000000000000005 = { isa = PBXFileSystemSynchronizedRootGroup; path = iOS; sourceTree = "<group>"; explicitFileTypes = {}; explicitFolders = (); };
-000000000000000000000006 = { isa = PBXFileSystemSynchronizedRootGroup; path = macOS; sourceTree = "<group>"; explicitFileTypes = {}; explicitFolders = (); };
-00000000000000000000000A = { isa = PBXNativeTarget; buildConfigurationList = 00000000000000000000000F; buildPhases = (00000000000000000000000C, 00000000000000000000000D, 00000000000000000000000E); buildRules = (); dependencies = (); fileSystemSynchronizedGroups = (000000000000000000000004, 000000000000000000000005); name = "Screenshot Sample iOS"; productName = "Screenshot Sample iOS"; productReference = 00000000000000000000000B; productType = "com.apple.product-type.application"; };
-00000000000000000000000B = { isa = PBXFileReference; explicitFileType = wrapper.application; path = "Screenshot Sample iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-00000000000000000000000C = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
-00000000000000000000000D = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
-00000000000000000000000E = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
-00000000000000000000000F = { isa = XCConfigurationList; buildConfigurations = (000000000000000000000010, 000000000000000000000011); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
-000000000000000000000010 = { isa = XCBuildConfiguration; name = Debug; buildSettings = { SDKROOT = iphoneos; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; IPHONEOS_DEPLOYMENT_TARGET = 17.0; TARGETED_DEVICE_FAMILY = "1,2"; INFOPLIST_KEY_UILaunchScreen_Generation = YES; INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES; GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = ch.inmood.ConnectSupport.ScreenshotSample; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; CODE_SIGN_STYLE = Automatic; SWIFT_EMIT_LOC_STRINGS = YES; }; };
-000000000000000000000011 = { isa = XCBuildConfiguration; name = Release; buildSettings = { SDKROOT = iphoneos; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; IPHONEOS_DEPLOYMENT_TARGET = 17.0; TARGETED_DEVICE_FAMILY = "1,2"; INFOPLIST_KEY_UILaunchScreen_Generation = YES; INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES; GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = ch.inmood.ConnectSupport.ScreenshotSample; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; CODE_SIGN_STYLE = Automatic; SWIFT_EMIT_LOC_STRINGS = YES; }; };
-000000000000000000000014 = { isa = PBXNativeTarget; buildConfigurationList = 000000000000000000000019; buildPhases = (000000000000000000000016, 000000000000000000000017, 000000000000000000000018); buildRules = (); dependencies = (); fileSystemSynchronizedGroups = (000000000000000000000004, 000000000000000000000006); name = "Screenshot Sample macOS"; productName = "Screenshot Sample macOS"; productReference = 000000000000000000000015; productType = "com.apple.product-type.application"; };
-000000000000000000000015 = { isa = PBXFileReference; explicitFileType = wrapper.application; path = "Screenshot Sample macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-000000000000000000000016 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
-000000000000000000000017 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
-000000000000000000000018 = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
-000000000000000000000019 = { isa = XCConfigurationList; buildConfigurations = (00000000000000000000001A, 00000000000000000000001B); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
-00000000000000000000001A = { isa = XCBuildConfiguration; name = Debug; buildSettings = { SDKROOT = macosx; MACOSX_DEPLOYMENT_TARGET = 14.0; GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = ch.inmood.ConnectSupport.ScreenshotSample; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; CODE_SIGN_STYLE = Automatic; SWIFT_EMIT_LOC_STRINGS = YES; }; };
-00000000000000000000001B = { isa = XCBuildConfiguration; name = Release; buildSettings = { SDKROOT = macosx; MACOSX_DEPLOYMENT_TARGET = 14.0; GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = ch.inmood.ConnectSupport.ScreenshotSample; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; CODE_SIGN_STYLE = Automatic; SWIFT_EMIT_LOC_STRINGS = YES; }; };
-000000000000000000000028 = { isa = XCConfigurationList; buildConfigurations = (000000000000000000000029, 00000000000000000000002A); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
-000000000000000000000029 = { isa = XCBuildConfiguration; name = Debug; buildSettings = { ONLY_ACTIVE_ARCH = YES; CLANG_ENABLE_MODULES = YES; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; }; };
-00000000000000000000002A = { isa = XCBuildConfiguration; name = Release; buildSettings = { CLANG_ENABLE_MODULES = YES; SWIFT_OPTIMIZATION_LEVEL = "-O"; }; };
-}; rootObject = 000000000000000000000001; }
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 71;
+	objects = {
+
+/* Begin PBXFileReference section */
+		00000000000000000000000B /* Screenshot Sample iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = "Screenshot Sample iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000015 /* Screenshot Sample macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = "Screenshot Sample macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		000000000000000000000004 /* Core */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Core; sourceTree = "<group>"; };
+		000000000000000000000005 /* iOS */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = iOS; sourceTree = "<group>"; };
+		000000000000000000000006 /* macOS */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = macOS; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00000000000000000000000D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000000000017 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000004 /* Core */,
+				000000000000000000000005 /* iOS */,
+				000000000000000000000006 /* macOS */,
+				000000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000000B /* Screenshot Sample iOS.app */,
+				000000000000000000000015 /* Screenshot Sample macOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00000000000000000000000A /* Screenshot Sample iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00000000000000000000000F /* Build configuration list for PBXNativeTarget "Screenshot Sample iOS" */;
+			buildPhases = (
+				00000000000000000000000C /* Sources */,
+				00000000000000000000000D /* Frameworks */,
+				00000000000000000000000E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				000000000000000000000004 /* Core */,
+				000000000000000000000005 /* iOS */,
+			);
+			name = "Screenshot Sample iOS";
+			productName = "Screenshot Sample iOS";
+			productReference = 00000000000000000000000B /* Screenshot Sample iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		000000000000000000000014 /* Screenshot Sample macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000019 /* Build configuration list for PBXNativeTarget "Screenshot Sample macOS" */;
+			buildPhases = (
+				000000000000000000000016 /* Sources */,
+				000000000000000000000017 /* Frameworks */,
+				000000000000000000000018 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				000000000000000000000004 /* Core */,
+				000000000000000000000006 /* macOS */,
+			);
+			name = "Screenshot Sample macOS";
+			productName = "Screenshot Sample macOS";
+			productReference = 000000000000000000000015 /* Screenshot Sample macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 2600;
+			};
+			buildConfigurationList = 000000000000000000000028 /* Build configuration list for PBXProject "Screenshot Sample" */;
+			compatibilityVersion = "Xcode 16.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				de,
+				Base,
+			);
+			mainGroup = 000000000000000000000002;
+			productRefGroup = 000000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00000000000000000000000A /* Screenshot Sample iOS */,
+				000000000000000000000014 /* Screenshot Sample macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00000000000000000000000E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000000000018 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00000000000000000000000C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000000000016 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		000000000000000000000010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.inmood.ConnectSupport.ScreenshotSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		000000000000000000000011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.inmood.ConnectSupport.ScreenshotSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		00000000000000000000001A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.inmood.ConnectSupport.ScreenshotSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		00000000000000000000001B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.inmood.ConnectSupport.ScreenshotSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		000000000000000000000029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00000000000000000000002A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00000000000000000000000F /* Build configuration list for PBXNativeTarget "Screenshot Sample iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000010 /* Debug */,
+				000000000000000000000011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000000000000000019 /* Build configuration list for PBXNativeTarget "Screenshot Sample macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00000000000000000000001A /* Debug */,
+				00000000000000000000001B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000000000000000028 /* Build configuration list for PBXProject "Screenshot Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000029 /* Debug */,
+				00000000000000000000002A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000000000000001 /* Project object */;
+}

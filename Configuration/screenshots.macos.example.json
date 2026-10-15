@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "bundleIdentifier": "ch.inmood.ConnectSupport.ScreenshotSample",
+  "languages": [
+    {
+      "id": "en-US",
+      "language": "en",
+      "locale": "en_US"
+    },
+    {
+      "id": "de-DE",
+      "language": "de",
+      "locale": "de_DE"
+    }
+  ],
+  "devices": [],
+  "screens": [
+    {
+      "name": "main",
+      "arguments": [
+        "-screenshotScreen",
+        "main"
+      ],
+      "waitSeconds": 8
+    },
+    {
+      "name": "device-detail",
+      "arguments": [
+        "-screenshotScreen",
+        "device-detail"
+      ],
+      "waitSeconds": 8
+    },
+    {
+      "name": "device-specifications",
+      "arguments": [
+        "-screenshotScreen",
+        "device-specifications"
+      ],
+      "waitSeconds": 8
+    },
+    {
+      "name": "create-incident",
+      "arguments": [
+        "-screenshotScreen",
+        "create-incident"
+      ],
+      "waitSeconds": 8
+    },
+    {
+      "name": "main-overlay",
+      "arguments": [
+        "-screenshotScreen",
+        "main-overlay"
+      ],
+      "waitSeconds": 8
+    },
+    {
+      "name": "apps",
+      "arguments": [
+        "-screenshotScreen",
+        "apps"
+      ],
+      "waitSeconds": 8
+    },
+    {
+      "name": "incident-popover",
+      "arguments": [
+        "-screenshotScreen",
+        "incident-popover"
+      ],
+      "waitSeconds": 8
+    },
+    {
+      "name": "settings",
+      "arguments": [
+        "-screenshotScreen",
+        "settings"
+      ],
+      "waitSeconds": 3
+    },
+    {
+      "name": "settings-notifications",
+      "arguments": [
+        "-screenshotScreen",
+        "settings",
+        "-screenshotSettingsPage",
+        "notifications"
+      ],
+      "waitSeconds": 3
+    },
+    {
+      "name": "settings-privacy",
+      "arguments": [
+        "-screenshotScreen",
+        "settings",
+        "-screenshotSettingsPage",
+        "privacy"
+      ],
+      "waitSeconds": 3
+    }
+  ],
+  "overwriteExisting": false,
+  "outputDirectory": "/absolute/path/to/screenshots",
+  "logDirectory": "/absolute/path/to/logs"
+}

@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct RootView: View {
+    @Environment(\.openSettings) private var openSettings
+    @Environment(\.locale) private var locale
     @Bindable var state: SampleState
     var body: some View {
         TabView(selection: $state.tab) {
@@ -9,10 +11,11 @@ struct RootView: View {
                     .navigationDestination(for: Device.self) { DeviceDetail(device: $0, state: state) }
                     .toolbar {
                         ToolbarItemGroup {
+                            SettingsLink { Label("Settings", systemImage: "gearshape") }
                             Button("Show welcome", systemImage: "sparkles") { state.showOverlay = true }
                             Button("Notifications", systemImage: "bell") { state.showPopover = true }
                                 .popover(isPresented: $state.showPopover) {
-                                    IncidentPopover()
+                                    IncidentPopover().environment(\.locale, locale)
                                 }
                         }
                     }
@@ -20,7 +23,7 @@ struct RootView: View {
             NavigationStack { AppsList() }
                 .tabItem { Label("Apps", systemImage: "square.grid.2x2") }.tag(SampleTab.apps)
         }
-        .sheet(isPresented: $state.showIncident) { IncidentForm() }
+        .sheet(isPresented: $state.showIncident) { IncidentForm().environment(\.locale, locale) }
         .overlay {
             if state.showOverlay { MainOverlay { state.showOverlay = false } }
         }
@@ -31,6 +34,8 @@ struct RootView: View {
             try? await Task.sleep(for: .milliseconds(300))
             guard !Task.isCancelled else { return }
             state.presentScreenshotTarget()
+            // MARK: - Screenshot Integration: -screenshotScreen settings opens a separate window
+            if state.screenshotTarget == .settings { openSettings() }
         }
         // MARK: - Screenshot Integration: stable captures without transition animations
         // Normal launches retain the standard animation behavior.

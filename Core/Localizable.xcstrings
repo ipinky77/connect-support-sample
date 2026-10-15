@@ -330,6 +330,126 @@
           }
         }
       }
+    },
+    "Settings": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einstellungen"
+          }
+        }
+      }
+    },
+    "General": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allgemein"
+          }
+        }
+      }
+    },
+    "Privacy": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Datenschutz"
+          }
+        }
+      }
+    },
+    "Sample Preferences": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beispieleinstellungen"
+          }
+        }
+      }
+    },
+    "Show device details": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gerätedetails anzeigen"
+          }
+        }
+      }
+    },
+    "Sample account": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beispielkonto"
+          }
+        }
+      }
+    },
+    "Incident Notifications": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vorfallbenachrichtigungen"
+          }
+        }
+      }
+    },
+    "Notify about new incidents": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über neue Vorfälle informieren"
+          }
+        }
+      }
+    },
+    "Notification settings are examples only. No notifications are sent.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Benachrichtigungseinstellungen dienen nur als Beispiel. Es werden keine Benachrichtigungen gesendet."
+          }
+        }
+      }
+    },
+    "Diagnostics": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diagnosedaten"
+          }
+        }
+      }
+    },
+    "Include diagnostics": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diagnosedaten einschließen"
+          }
+        }
+      }
+    },
+    "This sample does not collect or transmit personal data.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dieses Beispiel erfasst oder übermittelt keine personenbezogenen Daten."
+          }
+        }
+      }
     }
   },
   "version": "1.0"

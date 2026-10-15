@@ -5,6 +5,7 @@ enum DetailSection: String, CaseIterable { case overview, specifications }
 // MARK: - Screenshot Integration: target identifiers
 // Additional to normal navigation: names accepted by -screenshotScreen.
 enum ScreenshotTarget: String, CaseIterable {
+    case settings // macOS opens its native Settings scene for this target.
     case main, deviceDetail = "device-detail", deviceSpecifications = "device-specifications"
     case createIncident = "create-incident", mainOverlay = "main-overlay", apps, incidentPopover = "incident-popover"
 }
