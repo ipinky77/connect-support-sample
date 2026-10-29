@@ -1,5 +1,7 @@
 # Connect Support Screenshot Sample
 
+**Documentation revision 1.1 · 2026-10-29:** Clarified the required macOS window-adapter modifier order and the window-readiness timeout it prevents.
+
 A standalone SwiftUI sample app for AbbzThor Screenshot Creator (formerly Connect Support). No credentials, purchases, network access, or dependencies are required. All information is fictional. English and German are included. Normal launches use the same fixed sample data; screenshot launch arguments also prepare the requested state and disable transition animations.
 
 ## Open and run
@@ -115,6 +117,14 @@ Settings {
 ```
 
 The main window uses the default `.main` role. `captureTarget` selects `.settings` for the Settings destination, so only the Settings window sizes itself and reports readiness. The main window may remain open. No window title, manually entered window ID, toolbar-button lookup or foreground-window guess is needed in AbbzThor.
+
+### Important: attach the adapter before the session identity
+
+Keep `.background(SampleScreenshotWindow(...).frame(width: 0, height: 0))` **before** `.id(screenshots.configuration?.session ?? ...)`, as shown above, in both the main and Settings scenes. SwiftUI modifiers wrap the preceding view: this order places the native window adapter inside the view subtree that is recreated for each capture session.
+
+The adapter remembers the session for which it has already applied window sizing. If the adapter is placed after `.id(...)`, it is outside that recreated subtree and can retain stale sizing/window state while the content is replaced. The requested screen may open correctly, yet AbbzThor can time out with **“The app did not confirm a screenshot window ID.”** A fresh adapter inside the session identity reconnects to the actual window, applies its size and sends the `capture.ready.<session>` reply.
+
+The zero-sized frame keeps this helper from affecting the SwiftUI layout; it is not the requested capture-window size. That size comes from the session configuration and is applied to the native `NSWindow`.
 
 ## Adapting this pattern to a separate Help window
 
